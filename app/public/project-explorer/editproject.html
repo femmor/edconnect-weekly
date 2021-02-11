@@ -37,22 +37,24 @@
         <div class="container py-5">
             <h3 class="pb-2">Project 1</h3>
             <div class="row bg-light py-3">
-                <div class="col-md-3">
+                <div class="col">
                     <strong>Create By</strong>
                     <p>Emmanuel Egomson</p>
                 </div>
-                <div class="col-md-3">
+                <div class="col">
                     <strong>Date Created</strong>
                     <p>2021-08-20</p>
                 </div>
-                <div class="col-md-3">
+                <div class="col">
                     <strong>Last Updated</strong>
                     <p>2021-08-20</p>
                 </div>
-                <div class="col-md-3">
-                    <a class="btn btn-primary" href="viewproject.html">
-                        View Project
-                    </a>
+                <div class="col">
+                    <div class="d-flex justify-content-end">
+                        <button class="btn btn-primary">
+                            View Project
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -66,21 +68,21 @@
                     <form name="editProject">
                         <div class="form-group">
                             <label for="name">Project name</label>
-                            <input type="text" class="form-control" name="name" id="name" aria-describedby="name" placeholder="Enter project name">
+                            <input type="text" class="form-control" name="name" id="name" aria-describedby="name" placeholder="Project 1">
                         </div>
                         <div class="form-group">
                             <label for="abstract">Project Abstract</label>
                             <div class="form-group">
-                                <textarea class="form-control" name="abstract" id="abstract" rows="3"></textarea>
+                                <textarea class="form-control" name="abstract" id="abstract" rows="3" placeholder="Project 1 is a very interesting project"></textarea>
                             </div>
                         </div>
                         <div class="form-group">
                             <label for="authors">Author(s)</label>
-                            <input type="text" class="form-control" name="authors" id="authors" aria-describedby="authors" placeholder="Enter author name (separated by comma)">
+                            <input type="text" class="form-control" name="authors" id="authors" aria-describedby="authors" placeholder="Emmanuel Egomson">
                         </div>
                         <div class="form-group">
                             <label for="tags">Tags(s)</label>
-                            <input type="text" class="form-control" name="tags" id="tags" aria-describedby="tags" placeholder="Use # to tag project with different topics (e.g #javascript #mongodb)">
+                            <input type="text" class="form-control" name="tags" id="tags" aria-describedby="tags" placeholder="#web">
                         </div>
                         <button class="btn btn-primary">
                             Save
