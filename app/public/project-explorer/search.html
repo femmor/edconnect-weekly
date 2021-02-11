@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-primary">
+        <a class="navbar-brand" href="index.html">Project Explorer</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+  
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+            <form class="form-inline mr-auto my-2 my-lg-0" name="searchForm">
+                <input class="form-control mr-sm-2" type="text" placeholder="Search Projects" aria-label="Search Projects">
+                <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+              </form>
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="register.html">Sign up</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="login.html">Login</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="createproject.html">Submit</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    <main>
+
+        <!-- Search -->
+        <div class="container py-5 px-4">
+            <div class="row">
+                <h3 class="pb-2">Photo Gallery</h3>
+            </div>
+            <div class="row bg-light p-3" style="display: block">
+                <form name="searchForm">
+                    <div class="form-row align-items-center">
+                        <div class="form-group col-sm-7 my-1">
+                            <input type="text" name="searchTerm" class="form-control form-control-lg" placeholder="Search project name, authors, abstract, tags">
+                        </div>
+                        <div class="form-group col-sm-3 my-1">
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text">Search by</div>
+                                  </div>
+                                <select name="searchType" class="form-control form-control-lg">
+                                    <option value="Name">Name</option>
+                                    <option value="Authors">Authors</option>
+                                    <option value="Abstract">Abstract</option>
+                                    <option value="Tags">Tags</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group col-sm-auto my-1">
+                            <button type="submit" class="btn btn-lg btn-primary">Submit</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <!-- Search Result -->
+            <div class="row">
+                <h5 class="py-4">All Projects <small class="text-muted">(0 results)</small></h5>
+            </div>
+            
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="card mb-4 box-shadow">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                Project 1
+                            </h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Author 1</h6>
+                            <p class="card-text">Description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, suscipit</p>
+                            <a href="#" class="card-link">#html</a>
+                            <a href="#" class="card-link">#css</a>
+                            <a href="#" class="card-link">#javascript</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="card mb-4 box-shadow">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                Project 2
+                            </h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Author 1</h6>
+                            <p class="card-text">Description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, suscipit</p>
+                            <a href="#" class="card-link">#html</a>
+                            <a href="#" class="card-link">#css</a>
+                            <a href="#" class="card-link">#javascript</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="container bg-light">
+            <p class="py-3 px-2 text-right">Project Explorer &copy; 2021 - <strong>Edconnect</strong></p>
+        </div>
+    </footer>
+</body>
+</html>

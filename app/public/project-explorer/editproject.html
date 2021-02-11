@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Project</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-primary">
+        <a class="navbar-brand" href="index.html">Project Explorer</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+  
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+            <form class="form-inline mr-auto my-2 my-lg-0" name="searchForm">
+                <input class="form-control mr-sm-2" type="text" placeholder="Search Projects" aria-label="Search Projects">
+                <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+              </form>
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="register.html">Sign up</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="login.html">Login</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="createproject.html">Submit</a>
+            </li>
+          </ul>
+        </div>
+    </nav>
+    <main>
+
+        <!-- Edit Project -->
+        <div class="container py-5">
+            <div class="row">
+                <h3 class="pb-2">Project 1</h3>
+            </div>
+            <div class="row bg-light py-3">
+                <div class="col-md-3">
+                    <strong>Create By</strong>
+                    <p>Emmanuel Egomson</p>
+                </div>
+                <div class="col-md-3">
+                    <strong>Date Created</strong>
+                    <p>2021-08-20</p>
+                </div>
+                <div class="col-md-3">
+                    <strong>Last Updated</strong>
+                    <p>2021-08-20</p>
+                </div>
+                <div class="col-md-3">
+                    <a class="btn btn-primary" href="viewproject.html">
+                        View Project
+                    </a>
+                </div>
+            </div>
+
+            <!-- Update Project -->
+            <div class="row my-5">
+                <div class="col-md-6 my-1">
+                    <h5>Edit Project</h5>
+                    <hr>
+                    <div class="row">
+                        <div class="col">
+                            <form name="editProject">
+                                <div class="form-group">
+                                  <label for="name">Project name</label>
+                                  <input type="text" class="form-control" name="name" id="name" aria-describedby="name" placeholder="Enter project name">
+                                </div>
+                                <div class="form-group">
+                                    <label for="abstract">Project Abstract</label>
+                                    <div class="form-group">
+                                      <textarea class="form-control" name="abstract" id="abstract" rows="3"></textarea>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="authors">Author(s)</label>
+                                    <input type="text" class="form-control" name="authors" id="authors" aria-describedby="authors" placeholder="Enter author name (separated by comma)">
+                                </div>
+                                <div class="form-group">
+                                    <label for="tags">Tags(s)</label>
+                                    <input type="text" class="form-control" name="tags" id="tags" aria-describedby="tags" placeholder="Use # to tag project with different topics (e.g #javascript #mongodb)">
+                                </div>
+                                <button class="btn btn-primary">
+                                    Save
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 my-1">
+                    <h5>Manage Project files</h5>
+                    <hr>
+                    <div class="form-group pt-3">
+                        <div class="input-group">
+                            <input type="file" class="form-control" name="projectFile" id="projectFile" aria-describedby="projectFile">
+                            <div class="input-group-append">
+                                <span class="input-group-text" id="inputGroupPrepend">Browse</span>
+                              </div>
+                        </div>
+                        <hr>
+                        <div class="my-3">
+                            <div class="card">
+                                <div class="card-header">
+                                  Project files
+                                </div>
+                                <div class="card-body">
+                                    <p class="text-center">No file uploaded yet</p>
+                                  </div>
+                              </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="container bg-light">
+            <p class="py-3 px-2 text-right">Project Explorer &copy; 2021 - <strong>Edconnect</strong></p>
+        </div>
+    </footer>
+</body>
+</html>
